@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    ;
+
+}
+
+body {
+    display: block;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
+}
+
+.container {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 30px;
+
+}
+
+.container .productcard {
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    max-width: 300px;
+    height: 150px;
+    background: #b1ab90;
+
+    margin: 30px 20px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.7);
+    transition: 0.4s ease-in-out;
+}
+
+.container .productcard:hover {
+    height: 300px;
+}
+
+.container .productcard .image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    left: 0px;
+    z-index: 1;
+
+
+}
+
+.container .productcard .image img {
+    margin-top: 30px;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10000px;
+
+}
+
+
+.container .productcard .productdetail {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #201D1A;
+    font-family: monospace;
+    visibility: hidden;
+    opacity: 0;
+    /* Changed from 0 to 1 */
+    transition: 0.4s ease-in-out;
+    /* Corrected the transition property */
+}
+
+.container .productcard:hover .productdetail {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+}
+
+.aboveproducts {
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.image_above_product {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/*--------------------------------------- end of card ---------------- */
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    font-size: 80px;
+    color: #c2a3a3;
+
+}
+
+.centered1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    font-size: 40px;
+    color: aliceblue;
+
+
+}
+
+.centered2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 130%);
+    font-size: 40px;
+    color: aliceblue;
+
+
+}
+
+
+.button-shopSowFineArts {
+    --b: 3px;
+    /* border thickness */
+    --s: .45em;
+    /* size of the corner */
+    --color: #c2a3a3;
+
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #514444 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #ffd9008e;
+    outline-offset: .6em;
+    font-size: 16px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-shopSowFineArts:hover,
+.button-shopSowFineArts:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+.button-shopSowFineArts:active {
+    background: var(--color);
+    color: #ffd9008e;
+}
+
+/* ------------------------------------------- end of Fineart section ---------------------------------------*/
+
+
+.centeredJ {
+    color: #ADD8E6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(110%, -160%);
+    font-size: 80px;
+
+
+}
+
+.centered1J {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(25%, -25%);
+    font-size: 19px;
+    color: aliceblue;
+    margin-left: 40px;
+
+}
+
+.centered2J {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(260%, 140%);
+    font-size: 40px;
+    color: aliceblue;
+
+
+}
+
+
+.aboveproductsJew {
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.image_above_productJew {
+
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.button-Jewelry {
+    appearance: none;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.button-Jewelry:disabled {
+    pointer-events: none;
+}
+
+.button-Jewelry:hover {
+    color: #ADD8E6;
+    background-color: #1A1A1A;
+    box-shadow: rgba(113, 86, 86, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-Jewelry:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/*-------------------------------------------- end of Jewelry section--------------------------------------------- */
+
+
+
+
+
+.centeredAntique {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -450%);
+    font-size: 80px;
+    color: #FFE878;
+
+}
+
+.centeredAntique1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font-size: 40px;
+    color: aliceblue;
+
+
+}
+
+.centered2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 130%);
+    font-size: 40px;
+    color: aliceblue;
+
+
+}
+
+.buttonAntique {
+    appearance: none;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.buttonAntique:disabled {
+    pointer-events: none;
+}
+
+.buttonAntique:hover {
+    color: #FFE878;
+    background-color: #1A1A1A;
+    box-shadow: rgba(113, 86, 86, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.buttonAntique:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
