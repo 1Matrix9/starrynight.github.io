@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product page</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +15,37 @@
 </head>
 
 <body>
-
+    <header>
+        <div class="wrapper">
+          <nav class="nav">
+            <div class="nav-logo">
+              <p>LOGO .</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+              <ul>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="Products.HTML" class="link active">Products</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="about.html" class="link">About</a></li>
+              </ul>
+            </div>
+            <a href="register.html" class="reg__button">
+              <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">
+                  Sign In
+                </button>
+                <button class="btn" id="registerBtn" onclick="register()">
+                  Sign Up
+                </button>
+              </div>
+            </a>
+            <div class="nav-menu-btn">
+              <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+          </nav>
+        </div>
+      </header>
 
     <p style="color:#ffe978be ; font-size: 160px; text-align: center; "> Starry Night </p>
     <div class="text_under_name">
@@ -666,6 +698,27 @@
             </div>
         </div>
     </div>
+    <footer>
+        <p></p>
+        <div class="copy">
+          &copy; All rights reserved to &nbsp;
+          <span> AZA<span class="tech">TECH</span></span>
+        </div>
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <p>Facebook Account</p>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <p>Twitter Account</p>
+          </li>
+          <li>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <p>Instagram Account</p>
+          </li>
+        </ul>
+      </footer>
     <!--
         last 8 products     from 17 till 25                           --------------
         ---------------------------------------------------------------------

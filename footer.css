@@ -1,0 +1,35 @@
+footer {
+  position: relative;
+  background-color: #272523;
+  color: white;
+}
+
+footer .tech {
+  color: rgb(0, 166, 255);
+}
+
+footer .copy {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+}
+
+footer li a {
+  color: none;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: aliceblue;
+}
