@@ -30,3 +30,7 @@ function register() {
   x.style.opacity = 0;
   y.style.opacity = 1;
 }
+
+function logout() {
+  window.location.href = "logout.php";
+}
